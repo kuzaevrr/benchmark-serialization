@@ -1,0 +1,9 @@
+namespace ram.ka.ru.model;
+
+table UserFlatbuf {
+  id:long;
+  name:string;
+  email:string;
+  tags:[string];
+}
+root_type UserFlatbuf;
