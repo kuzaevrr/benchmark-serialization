@@ -1,0 +1,9 @@
+namespace model;
+
+table UserFlatbuf {
+    id:int64;
+    name:string;
+    email:string;
+    tags:[string];
+}
+root_type UserFlatbuf;
