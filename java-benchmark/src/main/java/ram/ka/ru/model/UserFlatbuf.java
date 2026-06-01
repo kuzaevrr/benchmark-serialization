@@ -16,61 +16,153 @@ import com.google.flatbuffers.StringVector;
 import com.google.flatbuffers.Struct;
 import com.google.flatbuffers.Table;
 import com.google.flatbuffers.UnionVector;
+
 import java.nio.ByteBuffer;
 import java.nio.ByteOrder;
 
 @SuppressWarnings("unused")
 public final class UserFlatbuf extends Table {
-  public static void ValidateVersion() { Constants.FLATBUFFERS_25_9_23(); }
-  public static UserFlatbuf getRootAsUserFlatbuf(ByteBuffer _bb) { return getRootAsUserFlatbuf(_bb, new UserFlatbuf()); }
-  public static UserFlatbuf getRootAsUserFlatbuf(ByteBuffer _bb, UserFlatbuf obj) { _bb.order(ByteOrder.LITTLE_ENDIAN); return (obj.__assign(_bb.getInt(_bb.position()) + _bb.position(), _bb)); }
-  public void __init(int _i, ByteBuffer _bb) { __reset(_i, _bb); }
-  public UserFlatbuf __assign(int _i, ByteBuffer _bb) { __init(_i, _bb); return this; }
+    public static void ValidateVersion() {
+        Constants.FLATBUFFERS_25_2_10();
+    }
 
-  public long id() { int o = __offset(4); return o != 0 ? bb.getLong(o + bb_pos) : 0L; }
-  public String name() { int o = __offset(6); return o != 0 ? __string(o + bb_pos) : null; }
-  public ByteBuffer nameAsByteBuffer() { return __vector_as_bytebuffer(6, 1); }
-  public ByteBuffer nameInByteBuffer(ByteBuffer _bb) { return __vector_in_bytebuffer(_bb, 6, 1); }
-  public String email() { int o = __offset(8); return o != 0 ? __string(o + bb_pos) : null; }
-  public ByteBuffer emailAsByteBuffer() { return __vector_as_bytebuffer(8, 1); }
-  public ByteBuffer emailInByteBuffer(ByteBuffer _bb) { return __vector_in_bytebuffer(_bb, 8, 1); }
-  public String tags(int j) { int o = __offset(10); return o != 0 ? __string(__vector(o) + j * 4) : null; }
-  public int tagsLength() { int o = __offset(10); return o != 0 ? __vector_len(o) : 0; }
-  public StringVector tagsVector() { return tagsVector(new StringVector()); }
-  public StringVector tagsVector(StringVector obj) { int o = __offset(10); return o != 0 ? obj.__assign(__vector(o), 4, bb) : null; }
+    public static UserFlatbuf getRootAsUserFlatbuf(ByteBuffer _bb) {
+        return getRootAsUserFlatbuf(_bb, new UserFlatbuf());
+    }
 
-  public static int createUserFlatbuf(FlatBufferBuilder builder,
-      long id,
-      int nameOffset,
-      int emailOffset,
-      int tagsOffset) {
-    builder.startTable(4);
-    UserFlatbuf.addId(builder, id);
-    UserFlatbuf.addTags(builder, tagsOffset);
-    UserFlatbuf.addEmail(builder, emailOffset);
-    UserFlatbuf.addName(builder, nameOffset);
-    return UserFlatbuf.endUserFlatbuf(builder);
-  }
+    public static UserFlatbuf getRootAsUserFlatbuf(ByteBuffer _bb, UserFlatbuf obj) {
+        _bb.order(ByteOrder.LITTLE_ENDIAN);
+        return (obj.__assign(_bb.getInt(_bb.position()) + _bb.position(), _bb));
+    }
 
-  public static void startUserFlatbuf(FlatBufferBuilder builder) { builder.startTable(4); }
-  public static void addId(FlatBufferBuilder builder, long id) { builder.addLong(0, id, 0L); }
-  public static void addName(FlatBufferBuilder builder, int nameOffset) { builder.addOffset(1, nameOffset, 0); }
-  public static void addEmail(FlatBufferBuilder builder, int emailOffset) { builder.addOffset(2, emailOffset, 0); }
-  public static void addTags(FlatBufferBuilder builder, int tagsOffset) { builder.addOffset(3, tagsOffset, 0); }
-  public static int createTagsVector(FlatBufferBuilder builder, int[] data) { builder.startVector(4, data.length, 4); for (int i = data.length - 1; i >= 0; i--) builder.addOffset(data[i]); return builder.endVector(); }
-  public static void startTagsVector(FlatBufferBuilder builder, int numElems) { builder.startVector(4, numElems, 4); }
-  public static int endUserFlatbuf(FlatBufferBuilder builder) {
-    int o = builder.endTable();
-    return o;
-  }
-  public static void finishUserFlatbufBuffer(FlatBufferBuilder builder, int offset) { builder.finish(offset); }
-  public static void finishSizePrefixedUserFlatbufBuffer(FlatBufferBuilder builder, int offset) { builder.finishSizePrefixed(offset); }
+    public void __init(int _i, ByteBuffer _bb) {
+        __reset(_i, _bb);
+    }
 
-  public static final class Vector extends BaseVector {
-    public Vector __assign(int _vector, int _element_size, ByteBuffer _bb) { __reset(_vector, _element_size, _bb); return this; }
+    public UserFlatbuf __assign(int _i, ByteBuffer _bb) {
+        __init(_i, _bb);
+        return this;
+    }
 
-    public UserFlatbuf get(int j) { return get(new UserFlatbuf(), j); }
-    public UserFlatbuf get(UserFlatbuf obj, int j) {  return obj.__assign(__indirect(__element(j), bb), bb); }
-  }
+    public long id() {
+        int o = __offset(4);
+        return o != 0 ? bb.getLong(o + bb_pos) : 0L;
+    }
+
+    public String name() {
+        int o = __offset(6);
+        return o != 0 ? __string(o + bb_pos) : null;
+    }
+
+    public ByteBuffer nameAsByteBuffer() {
+        return __vector_as_bytebuffer(6, 1);
+    }
+
+    public ByteBuffer nameInByteBuffer(ByteBuffer _bb) {
+        return __vector_in_bytebuffer(_bb, 6, 1);
+    }
+
+    public String email() {
+        int o = __offset(8);
+        return o != 0 ? __string(o + bb_pos) : null;
+    }
+
+    public ByteBuffer emailAsByteBuffer() {
+        return __vector_as_bytebuffer(8, 1);
+    }
+
+    public ByteBuffer emailInByteBuffer(ByteBuffer _bb) {
+        return __vector_in_bytebuffer(_bb, 8, 1);
+    }
+
+    public String tags(int j) {
+        int o = __offset(10);
+        return o != 0 ? __string(__vector(o) + j * 4) : null;
+    }
+
+    public int tagsLength() {
+        int o = __offset(10);
+        return o != 0 ? __vector_len(o) : 0;
+    }
+
+    public StringVector tagsVector() {
+        return tagsVector(new StringVector());
+    }
+
+    public StringVector tagsVector(StringVector obj) {
+        int o = __offset(10);
+        return o != 0 ? obj.__assign(__vector(o), 4, bb) : null;
+    }
+
+    public static int createUserFlatbuf(FlatBufferBuilder builder,
+                                        long id,
+                                        int nameOffset,
+                                        int emailOffset,
+                                        int tagsOffset) {
+        builder.startTable(4);
+        UserFlatbuf.addId(builder, id);
+        UserFlatbuf.addTags(builder, tagsOffset);
+        UserFlatbuf.addEmail(builder, emailOffset);
+        UserFlatbuf.addName(builder, nameOffset);
+        return UserFlatbuf.endUserFlatbuf(builder);
+    }
+
+    public static void startUserFlatbuf(FlatBufferBuilder builder) {
+        builder.startTable(4);
+    }
+
+    public static void addId(FlatBufferBuilder builder, long id) {
+        builder.addLong(0, id, 0L);
+    }
+
+    public static void addName(FlatBufferBuilder builder, int nameOffset) {
+        builder.addOffset(1, nameOffset, 0);
+    }
+
+    public static void addEmail(FlatBufferBuilder builder, int emailOffset) {
+        builder.addOffset(2, emailOffset, 0);
+    }
+
+    public static void addTags(FlatBufferBuilder builder, int tagsOffset) {
+        builder.addOffset(3, tagsOffset, 0);
+    }
+
+    public static int createTagsVector(FlatBufferBuilder builder, int[] data) {
+        builder.startVector(4, data.length, 4);
+        for (int i = data.length - 1; i >= 0; i--) builder.addOffset(data[i]);
+        return builder.endVector();
+    }
+
+    public static void startTagsVector(FlatBufferBuilder builder, int numElems) {
+        builder.startVector(4, numElems, 4);
+    }
+
+    public static int endUserFlatbuf(FlatBufferBuilder builder) {
+        int o = builder.endTable();
+        return o;
+    }
+
+    public static void finishUserFlatbufBuffer(FlatBufferBuilder builder, int offset) {
+        builder.finish(offset);
+    }
+
+    public static void finishSizePrefixedUserFlatbufBuffer(FlatBufferBuilder builder, int offset) {
+        builder.finishSizePrefixed(offset);
+    }
+
+    public static final class Vector extends BaseVector {
+        public Vector __assign(int _vector, int _element_size, ByteBuffer _bb) {
+            __reset(_vector, _element_size, _bb);
+            return this;
+        }
+
+        public UserFlatbuf get(int j) {
+            return get(new UserFlatbuf(), j);
+        }
+
+        public UserFlatbuf get(UserFlatbuf obj, int j) {
+            return obj.__assign(__indirect(__element(j), bb), bb);
+        }
+    }
 }
 
