@@ -13,16 +13,20 @@ public class FlatbufFormat implements SerializationFormat {
         User modelUser = (User) obj;
         FlatBufferBuilder builder = new FlatBufferBuilder();
 
+        int nameOffset = builder.createString(modelUser.getName());
+        int emailOffset = builder.createString(modelUser.getEmail());
+
         int[] tagOffsets = new int[modelUser.getTags().length];
         for (int i = 0; i < modelUser.getTags().length; i++) {
             tagOffsets[i] = builder.createString(modelUser.getTags()[i]);
         }
+        int tagsOffset = UserFlatbuf.createTagsVector(builder, tagOffsets);
 
         UserFlatbuf.startUserFlatbuf(builder);
         UserFlatbuf.addId(builder, modelUser.getId());
-        UserFlatbuf.addName(builder, builder.createString(modelUser.getName()));
-        UserFlatbuf.addEmail(builder, builder.createString(modelUser.getEmail()));
-        UserFlatbuf.addTags(builder, UserFlatbuf.createTagsVector(builder, tagOffsets));
+        UserFlatbuf.addName(builder, nameOffset);
+        UserFlatbuf.addEmail(builder, emailOffset);
+        UserFlatbuf.addTags(builder, tagsOffset);
 
         builder.finish(
                 UserFlatbuf.endUserFlatbuf(builder)
