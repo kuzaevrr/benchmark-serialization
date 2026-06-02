@@ -1,10 +1,10 @@
 package model
 
 type User struct {
-	ID    int64
-	Name  string
-	Email string
-	Tags  []string
+	ID    int64    `json:"id" xml:"id"`
+	Name  string   `json:"name" xml:"name"`
+	Email string   `json:"email" xml:"email"`
+	Tags  []string `json:"tags" xml:"tags"`
 }
 
 // NewTestUser создаёт тестового пользователя
