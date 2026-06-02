@@ -2,125 +2,125 @@ goos: darwin
 goarch: arm64
 pkg: go-benchmark
 cpu: Apple M5 Pro
-BenchmarkSerializeJSON-18             	 7523103	       137.2 ns/op	     112 B/op	       1 allocs/op
-BenchmarkSerializeJSON-18             	 8772031	       137.5 ns/op	     112 B/op	       1 allocs/op
-BenchmarkSerializeJSON-18             	 8777637	       137.5 ns/op	     112 B/op	       1 allocs/op
-BenchmarkSerializeJSON-18             	 8768913	       137.1 ns/op	     112 B/op	       1 allocs/op
-BenchmarkSerializeJSON-18             	 8763732	       137.1 ns/op	     112 B/op	       1 allocs/op
-BenchmarkSerializeJSON-18             	 8562631	       137.9 ns/op	     112 B/op	       1 allocs/op
-BenchmarkSerializeJSON-18             	 8758161	       137.5 ns/op	     112 B/op	       1 allocs/op
-BenchmarkSerializeJSON-18             	 8739565	       137.8 ns/op	     112 B/op	       1 allocs/op
-BenchmarkSerializeJSON-18             	 8733523	       138.3 ns/op	     112 B/op	       1 allocs/op
-BenchmarkSerializeJSON-18             	 8864450	       139.2 ns/op	     112 B/op	       1 allocs/op
-BenchmarkSerializeXML-18              	 1230418	       959.1 ns/op	    4656 B/op	       9 allocs/op
-BenchmarkSerializeXML-18              	 1237413	       971.8 ns/op	    4656 B/op	       9 allocs/op
-BenchmarkSerializeXML-18              	 1242301	       970.1 ns/op	    4656 B/op	       9 allocs/op
-BenchmarkSerializeXML-18              	 1255134	       954.0 ns/op	    4656 B/op	       9 allocs/op
-BenchmarkSerializeXML-18              	 1000000	      1001 ns/op	    4656 B/op	       9 allocs/op
-BenchmarkSerializeXML-18              	 1226488	       954.7 ns/op	    4656 B/op	       9 allocs/op
-BenchmarkSerializeXML-18              	 1242556	       971.8 ns/op	    4656 B/op	       9 allocs/op
-BenchmarkSerializeXML-18              	 1253973	       964.7 ns/op	    4656 B/op	       9 allocs/op
-BenchmarkSerializeXML-18              	 1225962	       970.1 ns/op	    4656 B/op	       9 allocs/op
-BenchmarkSerializeXML-18              	 1272136	       948.8 ns/op	    4656 B/op	       9 allocs/op
-BenchmarkSerializeProtobuf-18         	18253054	        64.76 ns/op	      64 B/op	       1 allocs/op
-BenchmarkSerializeProtobuf-18         	18641355	        64.43 ns/op	      64 B/op	       1 allocs/op
-BenchmarkSerializeProtobuf-18         	18619336	        65.19 ns/op	      64 B/op	       1 allocs/op
-BenchmarkSerializeProtobuf-18         	18713754	        64.31 ns/op	      64 B/op	       1 allocs/op
-BenchmarkSerializeProtobuf-18         	18654854	        64.73 ns/op	      64 B/op	       1 allocs/op
-BenchmarkSerializeProtobuf-18         	18389700	        64.15 ns/op	      64 B/op	       1 allocs/op
-BenchmarkSerializeProtobuf-18         	18838525	        64.07 ns/op	      64 B/op	       1 allocs/op
-BenchmarkSerializeProtobuf-18         	18796120	        64.72 ns/op	      64 B/op	       1 allocs/op
-BenchmarkSerializeProtobuf-18         	18160401	        65.57 ns/op	      64 B/op	       1 allocs/op
-BenchmarkSerializeProtobuf-18         	18438808	        66.26 ns/op	      64 B/op	       1 allocs/op
-BenchmarkSerializeFlatbuffers-18      	 5620014	       200.3 ns/op	    1104 B/op	       3 allocs/op
-BenchmarkSerializeFlatbuffers-18      	 5831178	       199.7 ns/op	    1104 B/op	       3 allocs/op
-BenchmarkSerializeFlatbuffers-18      	 5896538	       200.0 ns/op	    1104 B/op	       3 allocs/op
-BenchmarkSerializeFlatbuffers-18      	 5856402	       195.5 ns/op	    1104 B/op	       3 allocs/op
-BenchmarkSerializeFlatbuffers-18      	 6586891	       195.3 ns/op	    1104 B/op	       3 allocs/op
-BenchmarkSerializeFlatbuffers-18      	 5930348	       201.4 ns/op	    1104 B/op	       3 allocs/op
-BenchmarkSerializeFlatbuffers-18      	 6027225	       194.4 ns/op	    1104 B/op	       3 allocs/op
-BenchmarkSerializeFlatbuffers-18      	 5956244	       197.1 ns/op	    1104 B/op	       3 allocs/op
-BenchmarkSerializeFlatbuffers-18      	 6561218	       200.8 ns/op	    1104 B/op	       3 allocs/op
-BenchmarkSerializeFlatbuffers-18      	 5717877	       195.9 ns/op	    1104 B/op	       3 allocs/op
-BenchmarkDeserializeJSON-18           	 2127184	       573.3 ns/op	     296 B/op	      10 allocs/op
-BenchmarkDeserializeJSON-18           	 2125729	       571.4 ns/op	     296 B/op	      10 allocs/op
-BenchmarkDeserializeJSON-18           	 2088235	       575.3 ns/op	     296 B/op	      10 allocs/op
-BenchmarkDeserializeJSON-18           	 2100330	       579.8 ns/op	     296 B/op	      10 allocs/op
-BenchmarkDeserializeJSON-18           	 2066493	       574.5 ns/op	     296 B/op	      10 allocs/op
-BenchmarkDeserializeJSON-18           	 2095369	       578.9 ns/op	     296 B/op	      10 allocs/op
-BenchmarkDeserializeJSON-18           	 2078979	       577.8 ns/op	     296 B/op	      10 allocs/op
-BenchmarkDeserializeJSON-18           	 2073478	       577.8 ns/op	     296 B/op	      10 allocs/op
-BenchmarkDeserializeJSON-18           	 2091621	       586.9 ns/op	     296 B/op	      10 allocs/op
-BenchmarkDeserializeJSON-18           	 1995255	       584.0 ns/op	     296 B/op	      10 allocs/op
-BenchmarkDeserializeXML-18            	  501112	      2608 ns/op	    3011 B/op	      72 allocs/op
-BenchmarkDeserializeXML-18            	  488528	      2561 ns/op	    3018 B/op	      72 allocs/op
-BenchmarkDeserializeXML-18            	  491356	      2543 ns/op	    3016 B/op	      72 allocs/op
-BenchmarkDeserializeXML-18            	  494412	      2542 ns/op	    3015 B/op	      72 allocs/op
-BenchmarkDeserializeXML-18            	  494396	      2544 ns/op	    3015 B/op	      72 allocs/op
-BenchmarkDeserializeXML-18            	  495951	      2534 ns/op	    3014 B/op	      72 allocs/op
-BenchmarkDeserializeXML-18            	  487568	      2535 ns/op	    3018 B/op	      72 allocs/op
-BenchmarkDeserializeXML-18            	  490628	      2545 ns/op	    3017 B/op	      72 allocs/op
-BenchmarkDeserializeXML-18            	  488959	      2538 ns/op	    3018 B/op	      72 allocs/op
-BenchmarkDeserializeXML-18            	  440215	      2537 ns/op	    2986 B/op	      72 allocs/op
-BenchmarkDeserializeProtobuf-18       	 8433453	       142.5 ns/op	     176 B/op	       8 allocs/op
-BenchmarkDeserializeProtobuf-18       	 8504274	       141.3 ns/op	     176 B/op	       8 allocs/op
-BenchmarkDeserializeProtobuf-18       	 8456966	       143.5 ns/op	     176 B/op	       8 allocs/op
-BenchmarkDeserializeProtobuf-18       	 7724799	       143.2 ns/op	     176 B/op	       8 allocs/op
-BenchmarkDeserializeProtobuf-18       	 8286483	       144.7 ns/op	     176 B/op	       8 allocs/op
-BenchmarkDeserializeProtobuf-18       	 8395632	       143.7 ns/op	     176 B/op	       8 allocs/op
-BenchmarkDeserializeProtobuf-18       	 8498630	       142.5 ns/op	     176 B/op	       8 allocs/op
-BenchmarkDeserializeProtobuf-18       	 8569030	       142.0 ns/op	     176 B/op	       8 allocs/op
-BenchmarkDeserializeProtobuf-18       	 8563939	       140.1 ns/op	     176 B/op	       8 allocs/op
-BenchmarkDeserializeProtobuf-18       	 8594722	       140.0 ns/op	     176 B/op	       8 allocs/op
-BenchmarkDeserializeFlatbuffers-18    	1000000000	         0.9103 ns/op	       0 B/op	       0 allocs/op
-BenchmarkDeserializeFlatbuffers-18    	1000000000	         0.9219 ns/op	       0 B/op	       0 allocs/op
-BenchmarkDeserializeFlatbuffers-18    	1000000000	         0.9271 ns/op	       0 B/op	       0 allocs/op
-BenchmarkDeserializeFlatbuffers-18    	1000000000	         0.9227 ns/op	       0 B/op	       0 allocs/op
-BenchmarkDeserializeFlatbuffers-18    	1000000000	         0.9168 ns/op	       0 B/op	       0 allocs/op
-BenchmarkDeserializeFlatbuffers-18    	1000000000	         0.9254 ns/op	       0 B/op	       0 allocs/op
-BenchmarkDeserializeFlatbuffers-18    	1000000000	         0.9251 ns/op	       0 B/op	       0 allocs/op
-BenchmarkDeserializeFlatbuffers-18    	1000000000	         0.9213 ns/op	       0 B/op	       0 allocs/op
-BenchmarkDeserializeFlatbuffers-18    	1000000000	         0.9262 ns/op	       0 B/op	       0 allocs/op
-BenchmarkDeserializeFlatbuffers-18    	1000000000	         0.9306 ns/op	       0 B/op	       0 allocs/op
-BenchmarkFullCycleJSON-18             	 1542424	       776.1 ns/op	     584 B/op	      15 allocs/op
-BenchmarkFullCycleJSON-18             	 1511931	       787.4 ns/op	     584 B/op	      15 allocs/op
-BenchmarkFullCycleJSON-18             	 1526565	       800.0 ns/op	     584 B/op	      15 allocs/op
-BenchmarkFullCycleJSON-18             	 1523518	       783.4 ns/op	     584 B/op	      15 allocs/op
-BenchmarkFullCycleJSON-18             	 1530430	       791.7 ns/op	     584 B/op	      15 allocs/op
-BenchmarkFullCycleJSON-18             	 1520947	       812.9 ns/op	     584 B/op	      15 allocs/op
-BenchmarkFullCycleJSON-18             	 1502575	       800.3 ns/op	     584 B/op	      15 allocs/op
-BenchmarkFullCycleJSON-18             	 1505565	       787.6 ns/op	     584 B/op	      15 allocs/op
-BenchmarkFullCycleJSON-18             	 1511442	       810.9 ns/op	     584 B/op	      15 allocs/op
-BenchmarkFullCycleJSON-18             	 1521669	       796.5 ns/op	     584 B/op	      15 allocs/op
-BenchmarkFullCycleXML-18              	  358395	      3387 ns/op	    7568 B/op	      85 allocs/op
-BenchmarkFullCycleXML-18              	  354100	      3456 ns/op	    7568 B/op	      85 allocs/op
-BenchmarkFullCycleXML-18              	  358122	      3364 ns/op	    7568 B/op	      85 allocs/op
-BenchmarkFullCycleXML-18              	  351901	      3421 ns/op	    7568 B/op	      85 allocs/op
-BenchmarkFullCycleXML-18              	  360730	      3434 ns/op	    7568 B/op	      85 allocs/op
-BenchmarkFullCycleXML-18              	  316476	      3486 ns/op	    7568 B/op	      85 allocs/op
-BenchmarkFullCycleXML-18              	  362786	      3386 ns/op	    7568 B/op	      85 allocs/op
-BenchmarkFullCycleXML-18              	  361418	      3440 ns/op	    7568 B/op	      85 allocs/op
-BenchmarkFullCycleXML-18              	  334993	      3382 ns/op	    7568 B/op	      85 allocs/op
-BenchmarkFullCycleXML-18              	  355358	      3429 ns/op	    7568 B/op	      85 allocs/op
-BenchmarkFullCycleProtobuf-18         	 5176010	       234.7 ns/op	     352 B/op	      10 allocs/op
-BenchmarkFullCycleProtobuf-18         	 5297947	       231.2 ns/op	     352 B/op	      10 allocs/op
-BenchmarkFullCycleProtobuf-18         	 5311068	       225.4 ns/op	     352 B/op	      10 allocs/op
-BenchmarkFullCycleProtobuf-18         	 5321385	       225.6 ns/op	     352 B/op	      10 allocs/op
-BenchmarkFullCycleProtobuf-18         	 5332174	       226.0 ns/op	     352 B/op	      10 allocs/op
-BenchmarkFullCycleProtobuf-18         	 5277954	       227.3 ns/op	     352 B/op	      10 allocs/op
-BenchmarkFullCycleProtobuf-18         	 5310643	       228.2 ns/op	     352 B/op	      10 allocs/op
-BenchmarkFullCycleProtobuf-18         	 5233260	       228.7 ns/op	     352 B/op	      10 allocs/op
-BenchmarkFullCycleProtobuf-18         	 5267672	       227.7 ns/op	     352 B/op	      10 allocs/op
-BenchmarkFullCycleProtobuf-18         	 5322810	       225.7 ns/op	     352 B/op	      10 allocs/op
-BenchmarkFullCycleFlatbuffers-18      	 6424012	       200.1 ns/op	    1104 B/op	       3 allocs/op
-BenchmarkFullCycleFlatbuffers-18      	 6434808	       197.1 ns/op	    1104 B/op	       3 allocs/op
-BenchmarkFullCycleFlatbuffers-18      	 5890858	       198.8 ns/op	    1104 B/op	       3 allocs/op
-BenchmarkFullCycleFlatbuffers-18      	 5304722	       203.7 ns/op	    1104 B/op	       3 allocs/op
-BenchmarkFullCycleFlatbuffers-18      	 5950659	       198.7 ns/op	    1104 B/op	       3 allocs/op
-BenchmarkFullCycleFlatbuffers-18      	 5801234	       206.2 ns/op	    1104 B/op	       3 allocs/op
-BenchmarkFullCycleFlatbuffers-18      	 5850787	       198.4 ns/op	    1104 B/op	       3 allocs/op
-BenchmarkFullCycleFlatbuffers-18      	 6207871	       205.2 ns/op	    1104 B/op	       3 allocs/op
-BenchmarkFullCycleFlatbuffers-18      	 5768472	       209.7 ns/op	    1104 B/op	       3 allocs/op
-BenchmarkFullCycleFlatbuffers-18      	 5622730	       198.9 ns/op	    1104 B/op	       3 allocs/op
+BenchmarkSerializeJSON-18             	 7869529	       133.5 ns/op	   7493238 ops/s	     112 B/op	       1 allocs/op
+BenchmarkSerializeJSON-18             	 9201612	       134.1 ns/op	   7458364 ops/s	     112 B/op	       1 allocs/op
+BenchmarkSerializeJSON-18             	 9269695	       135.5 ns/op	   7380550 ops/s	     112 B/op	       1 allocs/op
+BenchmarkSerializeJSON-18             	 9371283	       129.3 ns/op	   7732545 ops/s	     112 B/op	       1 allocs/op
+BenchmarkSerializeJSON-18             	 9417250	       126.4 ns/op	   7914156 ops/s	     112 B/op	       1 allocs/op
+BenchmarkSerializeJSON-18             	 9481915	       127.1 ns/op	   7865289 ops/s	     112 B/op	       1 allocs/op
+BenchmarkSerializeJSON-18             	 9474709	       130.0 ns/op	   7695164 ops/s	     112 B/op	       1 allocs/op
+BenchmarkSerializeJSON-18             	 9335487	       129.8 ns/op	   7706830 ops/s	     112 B/op	       1 allocs/op
+BenchmarkSerializeJSON-18             	 9396122	       128.7 ns/op	   7771429 ops/s	     112 B/op	       1 allocs/op
+BenchmarkSerializeJSON-18             	 9079908	       131.2 ns/op	   7623689 ops/s	     112 B/op	       1 allocs/op
+BenchmarkSerializeXML-18              	 1256000	       961.9 ns/op	   1039633 ops/s	    4656 B/op	       9 allocs/op
+BenchmarkSerializeXML-18              	 1244403	       968.2 ns/op	   1032852 ops/s	    4656 B/op	       9 allocs/op
+BenchmarkSerializeXML-18              	 1254836	       970.1 ns/op	   1030816 ops/s	    4656 B/op	       9 allocs/op
+BenchmarkSerializeXML-18              	 1246963	       965.5 ns/op	   1035681 ops/s	    4656 B/op	       9 allocs/op
+BenchmarkSerializeXML-18              	 1234018	       964.5 ns/op	   1036829 ops/s	    4656 B/op	       9 allocs/op
+BenchmarkSerializeXML-18              	 1234681	       948.0 ns/op	   1054848 ops/s	    4656 B/op	       9 allocs/op
+BenchmarkSerializeXML-18              	 1218728	       972.9 ns/op	   1027836 ops/s	    4656 B/op	       9 allocs/op
+BenchmarkSerializeXML-18              	 1229032	       975.7 ns/op	   1024936 ops/s	    4656 B/op	       9 allocs/op
+BenchmarkSerializeXML-18              	 1240927	       966.7 ns/op	   1034470 ops/s	    4656 B/op	       9 allocs/op
+BenchmarkSerializeXML-18              	 1254304	       972.6 ns/op	   1028224 ops/s	    4656 B/op	       9 allocs/op
+BenchmarkSerializeProtobuf-18         	18505916	        64.55 ns/op	  15491339 ops/s	      64 B/op	       1 allocs/op
+BenchmarkSerializeProtobuf-18         	18675879	        65.16 ns/op	  15346959 ops/s	      64 B/op	       1 allocs/op
+BenchmarkSerializeProtobuf-18         	18512376	        66.27 ns/op	  15088799 ops/s	      64 B/op	       1 allocs/op
+BenchmarkSerializeProtobuf-18         	18850141	        63.95 ns/op	  15638446 ops/s	      64 B/op	       1 allocs/op
+BenchmarkSerializeProtobuf-18         	18928028	        64.12 ns/op	  15596145 ops/s	      64 B/op	       1 allocs/op
+BenchmarkSerializeProtobuf-18         	18646774	        64.78 ns/op	  15438063 ops/s	      64 B/op	       1 allocs/op
+BenchmarkSerializeProtobuf-18         	18153716	        64.51 ns/op	  15502201 ops/s	      64 B/op	       1 allocs/op
+BenchmarkSerializeProtobuf-18         	18093270	        65.69 ns/op	  15222930 ops/s	      64 B/op	       1 allocs/op
+BenchmarkSerializeProtobuf-18         	18511293	        64.78 ns/op	  15435802 ops/s	      64 B/op	       1 allocs/op
+BenchmarkSerializeProtobuf-18         	18317149	        64.83 ns/op	  15425105 ops/s	      64 B/op	       1 allocs/op
+BenchmarkSerializeFlatbuffers-18      	 5822894	       200.6 ns/op	   4985081 ops/s	    1104 B/op	       3 allocs/op
+BenchmarkSerializeFlatbuffers-18      	 6248746	       194.1 ns/op	   5150987 ops/s	    1104 B/op	       3 allocs/op
+BenchmarkSerializeFlatbuffers-18      	 6114307	       196.6 ns/op	   5087624 ops/s	    1104 B/op	       3 allocs/op
+BenchmarkSerializeFlatbuffers-18      	 5837664	       201.0 ns/op	   4976270 ops/s	    1104 B/op	       3 allocs/op
+BenchmarkSerializeFlatbuffers-18      	 6011390	       195.5 ns/op	   5114488 ops/s	    1104 B/op	       3 allocs/op
+BenchmarkSerializeFlatbuffers-18      	 6474656	       197.1 ns/op	   5073609 ops/s	    1104 B/op	       3 allocs/op
+BenchmarkSerializeFlatbuffers-18      	 5949073	       196.8 ns/op	   5080457 ops/s	    1104 B/op	       3 allocs/op
+BenchmarkSerializeFlatbuffers-18      	 6247412	       197.9 ns/op	   5052672 ops/s	    1104 B/op	       3 allocs/op
+BenchmarkSerializeFlatbuffers-18      	 5959682	       195.4 ns/op	   5118364 ops/s	    1104 B/op	       3 allocs/op
+BenchmarkSerializeFlatbuffers-18      	 6578772	       200.0 ns/op	   5000819 ops/s	    1104 B/op	       3 allocs/op
+BenchmarkDeserializeJSON-18           	 2061070	       569.5 ns/op	   1755809 ops/s	     296 B/op	      10 allocs/op
+BenchmarkDeserializeJSON-18           	 2106388	       569.4 ns/op	   1756342 ops/s	     296 B/op	      10 allocs/op
+BenchmarkDeserializeJSON-18           	 2114668	       568.3 ns/op	   1759590 ops/s	     296 B/op	      10 allocs/op
+BenchmarkDeserializeJSON-18           	 2095074	       571.6 ns/op	   1749576 ops/s	     296 B/op	      10 allocs/op
+BenchmarkDeserializeJSON-18           	 2108738	       568.4 ns/op	   1759419 ops/s	     296 B/op	      10 allocs/op
+BenchmarkDeserializeJSON-18           	 2111655	       574.7 ns/op	   1739899 ops/s	     296 B/op	      10 allocs/op
+BenchmarkDeserializeJSON-18           	 2092842	       570.5 ns/op	   1752766 ops/s	     296 B/op	      10 allocs/op
+BenchmarkDeserializeJSON-18           	 2105208	       569.2 ns/op	   1756719 ops/s	     296 B/op	      10 allocs/op
+BenchmarkDeserializeJSON-18           	 2110899	       573.0 ns/op	   1745125 ops/s	     296 B/op	      10 allocs/op
+BenchmarkDeserializeJSON-18           	 2078764	       572.9 ns/op	   1745465 ops/s	     296 B/op	      10 allocs/op
+BenchmarkDeserializeXML-18            	  496315	      2585 ns/op	    386908 ops/s	    3014 B/op	      72 allocs/op
+BenchmarkDeserializeXML-18            	  495402	      2558 ns/op	    390962 ops/s	    3014 B/op	      72 allocs/op
+BenchmarkDeserializeXML-18            	  457638	      2582 ns/op	    387334 ops/s	    2976 B/op	      72 allocs/op
+BenchmarkDeserializeXML-18            	  486031	      2579 ns/op	    387782 ops/s	    3019 B/op	      72 allocs/op
+BenchmarkDeserializeXML-18            	  490406	      2585 ns/op	    386799 ops/s	    3017 B/op	      72 allocs/op
+BenchmarkDeserializeXML-18            	  495721	      2570 ns/op	    389040 ops/s	    3014 B/op	      72 allocs/op
+BenchmarkDeserializeXML-18            	  492958	      2596 ns/op	    385235 ops/s	    3015 B/op	      72 allocs/op
+BenchmarkDeserializeXML-18            	  489668	      2578 ns/op	    387836 ops/s	    3017 B/op	      72 allocs/op
+BenchmarkDeserializeXML-18            	  487638	      2578 ns/op	    387934 ops/s	    3018 B/op	      72 allocs/op
+BenchmarkDeserializeXML-18            	  491614	      2571 ns/op	    388992 ops/s	    3016 B/op	      72 allocs/op
+BenchmarkDeserializeProtobuf-18       	 8565808	       139.2 ns/op	   7183960 ops/s	     176 B/op	       8 allocs/op
+BenchmarkDeserializeProtobuf-18       	 8573624	       139.0 ns/op	   7193624 ops/s	     176 B/op	       8 allocs/op
+BenchmarkDeserializeProtobuf-18       	 8678779	       137.8 ns/op	   7254672 ops/s	     176 B/op	       8 allocs/op
+BenchmarkDeserializeProtobuf-18       	 8648769	       138.6 ns/op	   7215661 ops/s	     176 B/op	       8 allocs/op
+BenchmarkDeserializeProtobuf-18       	 8673193	       138.9 ns/op	   7198511 ops/s	     176 B/op	       8 allocs/op
+BenchmarkDeserializeProtobuf-18       	 8644401	       139.0 ns/op	   7193569 ops/s	     176 B/op	       8 allocs/op
+BenchmarkDeserializeProtobuf-18       	 8644076	       138.7 ns/op	   7211891 ops/s	     176 B/op	       8 allocs/op
+BenchmarkDeserializeProtobuf-18       	 8688948	       140.9 ns/op	   7094806 ops/s	     176 B/op	       8 allocs/op
+BenchmarkDeserializeProtobuf-18       	 8565733	       139.7 ns/op	   7160665 ops/s	     176 B/op	       8 allocs/op
+BenchmarkDeserializeProtobuf-18       	 8567360	       140.0 ns/op	   7143629 ops/s	     176 B/op	       8 allocs/op
+BenchmarkDeserializeFlatbuffers-18    	1000000000	         0.9094 ns/op	1099606226 ops/s	       0 B/op	       0 allocs/op
+BenchmarkDeserializeFlatbuffers-18    	1000000000	         0.9147 ns/op	1093238036 ops/s	       0 B/op	       0 allocs/op
+BenchmarkDeserializeFlatbuffers-18    	1000000000	         0.9161 ns/op	1091607819 ops/s	       0 B/op	       0 allocs/op
+BenchmarkDeserializeFlatbuffers-18    	1000000000	         0.9155 ns/op	1092283532 ops/s	       0 B/op	       0 allocs/op
+BenchmarkDeserializeFlatbuffers-18    	1000000000	         0.9154 ns/op	1092473464 ops/s	       0 B/op	       0 allocs/op
+BenchmarkDeserializeFlatbuffers-18    	1000000000	         0.9145 ns/op	1093480311 ops/s	       0 B/op	       0 allocs/op
+BenchmarkDeserializeFlatbuffers-18    	1000000000	         0.9208 ns/op	1085989607 ops/s	       0 B/op	       0 allocs/op
+BenchmarkDeserializeFlatbuffers-18    	1000000000	         0.9163 ns/op	1091343694 ops/s	       0 B/op	       0 allocs/op
+BenchmarkDeserializeFlatbuffers-18    	1000000000	         0.9169 ns/op	1090581124 ops/s	       0 B/op	       0 allocs/op
+BenchmarkDeserializeFlatbuffers-18    	1000000000	         0.9310 ns/op	1074084293 ops/s	       0 B/op	       0 allocs/op
+BenchmarkFullCycleJSON-18             	 1532236	       781.4 ns/op	   1279725 ops/s	     584 B/op	      15 allocs/op
+BenchmarkFullCycleJSON-18             	 1544385	       771.8 ns/op	   1295756 ops/s	     584 B/op	      15 allocs/op
+BenchmarkFullCycleJSON-18             	 1552383	       771.3 ns/op	   1296538 ops/s	     584 B/op	      15 allocs/op
+BenchmarkFullCycleJSON-18             	 1524534	       778.2 ns/op	   1285041 ops/s	     584 B/op	      15 allocs/op
+BenchmarkFullCycleJSON-18             	 1550436	       773.7 ns/op	   1292414 ops/s	     584 B/op	      15 allocs/op
+BenchmarkFullCycleJSON-18             	 1556019	       774.8 ns/op	   1290602 ops/s	     584 B/op	      15 allocs/op
+BenchmarkFullCycleJSON-18             	 1547629	       774.3 ns/op	   1291410 ops/s	     584 B/op	      15 allocs/op
+BenchmarkFullCycleJSON-18             	 1545050	       776.8 ns/op	   1287367 ops/s	     584 B/op	      15 allocs/op
+BenchmarkFullCycleJSON-18             	 1516354	       780.0 ns/op	   1282043 ops/s	     584 B/op	      15 allocs/op
+BenchmarkFullCycleJSON-18             	 1545393	       780.1 ns/op	   1281928 ops/s	     584 B/op	      15 allocs/op
+BenchmarkFullCycleXML-18              	  349590	      3393 ns/op	    294690 ops/s	    7568 B/op	      85 allocs/op
+BenchmarkFullCycleXML-18              	  349994	      3385 ns/op	    295462 ops/s	    7568 B/op	      85 allocs/op
+BenchmarkFullCycleXML-18              	  352826	      3384 ns/op	    295505 ops/s	    7568 B/op	      85 allocs/op
+BenchmarkFullCycleXML-18              	  358182	      3397 ns/op	    294370 ops/s	    7568 B/op	      85 allocs/op
+BenchmarkFullCycleXML-18              	  356467	      3398 ns/op	    294303 ops/s	    7568 B/op	      85 allocs/op
+BenchmarkFullCycleXML-18              	  354031	      3428 ns/op	    291738 ops/s	    7568 B/op	      85 allocs/op
+BenchmarkFullCycleXML-18              	  356209	      3430 ns/op	    291559 ops/s	    7568 B/op	      85 allocs/op
+BenchmarkFullCycleXML-18              	  353041	      3411 ns/op	    293200 ops/s	    7568 B/op	      85 allocs/op
+BenchmarkFullCycleXML-18              	  349882	      3418 ns/op	    292539 ops/s	    7568 B/op	      85 allocs/op
+BenchmarkFullCycleXML-18              	  351324	      3444 ns/op	    290385 ops/s	    7568 B/op	      85 allocs/op
+BenchmarkFullCycleProtobuf-18         	 5255108	       228.5 ns/op	   4376307 ops/s	     352 B/op	      10 allocs/op
+BenchmarkFullCycleProtobuf-18         	 5218960	       227.3 ns/op	   4399343 ops/s	     352 B/op	      10 allocs/op
+BenchmarkFullCycleProtobuf-18         	 5280687	       228.9 ns/op	   4369576 ops/s	     352 B/op	      10 allocs/op
+BenchmarkFullCycleProtobuf-18         	 5272452	       228.0 ns/op	   4386840 ops/s	     352 B/op	      10 allocs/op
+BenchmarkFullCycleProtobuf-18         	 5246490	       228.1 ns/op	   4383162 ops/s	     352 B/op	      10 allocs/op
+BenchmarkFullCycleProtobuf-18         	 5278777	       226.9 ns/op	   4406905 ops/s	     352 B/op	      10 allocs/op
+BenchmarkFullCycleProtobuf-18         	 5291737	       226.7 ns/op	   4411248 ops/s	     352 B/op	      10 allocs/op
+BenchmarkFullCycleProtobuf-18         	 5285035	       227.1 ns/op	   4403768 ops/s	     352 B/op	      10 allocs/op
+BenchmarkFullCycleProtobuf-18         	 5281550	       227.7 ns/op	   4392327 ops/s	     352 B/op	      10 allocs/op
+BenchmarkFullCycleProtobuf-18         	 5247374	       230.5 ns/op	   4338329 ops/s	     352 B/op	      10 allocs/op
+BenchmarkFullCycleFlatbuffers-18      	 6466384	       198.6 ns/op	   5035720 ops/s	    1104 B/op	       3 allocs/op
+BenchmarkFullCycleFlatbuffers-18      	 5861156	       199.3 ns/op	   5018130 ops/s	    1104 B/op	       3 allocs/op
+BenchmarkFullCycleFlatbuffers-18      	 6017170	       194.2 ns/op	   5150421 ops/s	    1104 B/op	       3 allocs/op
+BenchmarkFullCycleFlatbuffers-18      	 5889750	       195.8 ns/op	   5106535 ops/s	    1104 B/op	       3 allocs/op
+BenchmarkFullCycleFlatbuffers-18      	 5856356	       198.6 ns/op	   5036041 ops/s	    1104 B/op	       3 allocs/op
+BenchmarkFullCycleFlatbuffers-18      	 6252700	       189.9 ns/op	   5265232 ops/s	    1104 B/op	       3 allocs/op
+BenchmarkFullCycleFlatbuffers-18      	 5967397	       193.9 ns/op	   5158135 ops/s	    1104 B/op	       3 allocs/op
+BenchmarkFullCycleFlatbuffers-18      	 5775397	       196.9 ns/op	   5079422 ops/s	    1104 B/op	       3 allocs/op
+BenchmarkFullCycleFlatbuffers-18      	 6134220	       193.1 ns/op	   5178303 ops/s	    1104 B/op	       3 allocs/op
+BenchmarkFullCycleFlatbuffers-18      	 6344320	       195.7 ns/op	   5110487 ops/s	    1104 B/op	       3 allocs/op
 PASS
-ok  	go-benchmark	175.833s
+ok  	go-benchmark	176.883s
